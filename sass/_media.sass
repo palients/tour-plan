@@ -13,16 +13,25 @@
     &__search
       margin-left: auto
     &-menu
-      padding-top: 22px
+      padding-right: 13px
+      padding-left: 13px
+      padding-top: 20px
       padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
   .search
+    margin-right: 73px
     &__input
       width: 340px
+  .hotel
+    &-info
+      &__description
+        margin-bottom: 7px
+  .stars
+    margin-bottom: 3px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -47,6 +56,7 @@
           background-color: $text-color
   .stars
     flex-basis: auto
+
   .hotel
     &-name
       flex-basis: 100%
@@ -64,5 +74,18 @@
         order: -1
         margin-left: 0
 @media (max-width: 576px)
+  .container
+    max-width: 87%
   .logo
     width: 99px
+  .navbar
+    &-top
+      padding-top: 23px
+      padding-bottom: 29px
+  .hotel
+    padding-top: 1px
+  .breadcrumb
+    &-list
+      padding-top: 19px
+  .stars
+    margin-right: 13px
