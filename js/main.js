@@ -3,6 +3,13 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 500,
 
+  // Keyboard Control
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: ".slider-button--next",
