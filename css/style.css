@@ -867,6 +867,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-info {
+    padding-bottom: 13px;
+  }
   .hotel-info__description {
     margin-bottom: 7px;
   }
