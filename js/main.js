@@ -16,3 +16,15 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".slider-button--prev",
   },
 });
+
+// Подключение яндекс карт
+
+ymaps.ready(init);
+function init(){
+  var myMap = new ymaps.Map("map", {
+    center: [7.57, 79.80],
+    zoom: 11,
+    controls: ["zoomControl"],
+    behaviors: ["drag"]
+  });
+}

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -118,29 +118,28 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider">
+        <div class="slider hotel__slider">
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="img/slides/slide-1.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/slides/slide-1.jpg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img src="img/slides/slide-2.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/slides/slide-2.jpg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img src="img/slides/slide-3.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/slides/slide-3.jpg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img src="img/slides/slide-4.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/slides/slide-4.jpg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img src="img/slides/slide-5.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/slides/slide-5.jpg" alt="slide">
               </div>
             </div>
-
             <!-- If we need navigation buttons -->
             <button class="slider-button slider-button--prev"></button>
             <button class="slider-button slider-button--next"></button>
@@ -148,11 +147,48 @@
           <!-- /.swiper -->
         </div>
         <!-- /.slider -->
+        <div class="hotel-right">
+          <div class="booking">
+            <div class="booking__info">
+              <div class="booking__price">
+                <span class="booking__start">price starts as</span>
+                <strong class="booking__pricetag">$ 8,500</strong>
+                <span class="booking__per-room">per room / night</span>
+              </div>
+              <!-- /.booking__price -->
+              <div class="booking__room">
+                <div class="booking__text">
+                  <img src="img/user.svg" alt="Icon: user" class="booking__icon">
+                  <span class="booking__description">2 x Guests</span>
+                </div>
+                <div class="booking__text">
+                  <img src="img/home.svg" alt="Icon: home" class="booking__icon">
+                  <span class="booking__description">1 x Room</span>
+                </div>
+              </div>
+              <!-- /.booking__room -->
+            </div>
+            <!-- /.booking__info -->
+            <div class="booking__call-center">
+              <span class="booking__heading">Quick Booking</span>
+              <a class="booking__number" href="tel:12100">
+                <img src="img/call.svg" alt="Icon: call">
+                <span class="booking__num">12100</span>
+              </a>
+            </div>
+            <!-- /.booking__call-center -->
+            <button class="button booking__button">View Other Options</button>
+          </div>
+          <!-- /.booking -->
+          <div id="map" class="map"></div>
+          <!-- /.map -->
+        </div>
       </div>
       <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c2a15098-ac82-4a27-8a41-91800810eed7&lang=en_US"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
