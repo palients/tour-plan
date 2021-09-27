@@ -17,14 +17,14 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// Подключение яндекс карт
+// Подключение яндекс карт API
 
-ymaps.ready(init);
-function init(){
-  var myMap = new ymaps.Map("map", {
-    center: [7.57, 79.80],
-    zoom: 11,
-    controls: ["zoomControl"],
-    behaviors: ["drag"]
-  });
-}
+// ymaps.ready(init);
+// function init(){
+//   var myMap = new ymaps.Map("map", {
+//     center: [7.57, 79.80],
+//     zoom: 11,
+//     controls: ["zoomControl"],
+//     behaviors: ["drag"]
+//   });
+// }

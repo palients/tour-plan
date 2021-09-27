@@ -454,6 +454,7 @@ template {
   height: 100%;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .logo {
@@ -816,10 +817,28 @@ template {
 }
 
 .map {
-  width: 347px;
-  height: 213px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.newsletter {
+  position: relative;
+  padding: 90px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newsletter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
 }
 
 @media (max-width: 1200px) {
@@ -890,9 +909,12 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 200px;
   }
   .booking {
-    width: 340px;
+    min-width: 340px;
+    padding-right: 22px;
+    padding-left: 24px;
   }
   .slider {
     width: 100%;
@@ -999,15 +1021,27 @@ template {
   }
   .breadcrumb-list {
     padding-top: 19px;
+    padding-bottom: 19px;
   }
   .stars {
     margin-right: 13px;
+    margin-bottom: 4px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-info {
+    padding-bottom: 32px;
+  }
+  .hotel-info__offer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .booking {
+    min-width: 279px;
   }
 }
 /*# sourceMappingURL=style.css.map */
