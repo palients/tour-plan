@@ -10,7 +10,8 @@
         height: 100%
         object-fit: cover
 @media (max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -73,7 +74,6 @@
         flex-direction: column
         border: none
         background-color: $light
-        cursor: pointer
         &__line
           width: 16px
           height: 1px
@@ -86,11 +86,6 @@
     &-right
       flex-direction: column
       min-height: 450px
-    .booking
-      width: 100%
-    .map
-      width: 100%
-  .hotel
     &-name
       flex-basis: 100%
     &-wrapper
@@ -106,6 +101,14 @@
       &__offer
         order: -1
         margin-left: 0
+    .map
+      width: 100%
+  .newsletter
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
 @media (max-width: 576px)
   .container
     max-width: 87%
@@ -127,6 +130,7 @@
   .slider
     height: 179px
   .hotel
+    padding-bottom: 0
     &__slider
       margin-bottom: 20px
     &-info
@@ -136,3 +140,9 @@
         padding-right: 10px
   .booking
     min-width: 279px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+  .subscribe
+    width: 100%
