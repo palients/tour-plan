@@ -516,6 +516,10 @@ template {
   color: inherit;
 }
 
+iframe {
+  width: 100%;
+}
+
 .hotel {
   padding-top: 16px;
   padding-bottom: 70px;
@@ -913,7 +917,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 40px 0 0 0;
 }
 
 .reviews__title {
@@ -924,6 +928,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -969,7 +974,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 39%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -985,12 +990,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-profile.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-profile.svg);
-  right: 0;
+  right: 18px;
 }
 
 .reviews-slider__profile {
@@ -1005,7 +1010,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews-slider__avatar {
@@ -1023,6 +1028,8 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #ec1f46;
+  margin-left: 3px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -1031,10 +1038,12 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
+  margin-left: 3px;
   margin-bottom: 4px;
 }
 
 .reviews-slider__rating {
+  margin-left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,21 +1052,27 @@ template {
           align-items: center;
 }
 
+.reviews-slider__rating__star {
+  margin-right: 2px;
+}
+
 .reviews-slider__text {
-  max-width: 537px;
+  max-width: 536px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
-  margin: auto;
+  margin: 0;
+  margin-left: 2px;
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 72px 0 98px 0;
 }
 
 .activities__title {
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1140,7 +1155,7 @@ template {
   background-color: #ec1f46;
   border: none;
   border-radius: 4px;
-  padding: 7px 22px;
+  padding: 7px 21px 7px 20px;
 }
 
 @media (max-width: 1200px) {
@@ -1202,6 +1217,9 @@ template {
   .stars {
     margin-bottom: 3px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1216,7 +1234,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 200px;
+    height: 210px;
   }
   .hotel-slider {
     width: 100%;
@@ -1229,8 +1247,25 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     max-width: 579px;
+  }
+  .reviews-slider__button {
+    top: 43%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
+  }
+  .activities {
+    padding-top: 62px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1241,11 +1276,23 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 255px;
+  }
+  .card__title {
+    width: 200px;
+  }
+  .newsletter {
+    height: 260px;
+  }
+  .newsletter-wrapper {
+    margin-top: -6px;
   }
 }
 
 @media (max-width: 767px) {
+  .map {
+    width: 100%;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -1317,9 +1364,6 @@ template {
   .hotel-info-slider {
     height: 350px;
   }
-  .map {
-    width: 100%;
-  }
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
@@ -1363,6 +1407,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  iframe {
+    height: 172.94px;
+  }
   .container {
     max-width: 87%;
   }
@@ -1373,9 +1420,6 @@ template {
     padding-top: 23px;
     padding-bottom: 29px;
   }
-  .hotel {
-    padding-top: 1px;
-  }
   .breadcrumb-list {
     padding-top: 19px;
     padding-bottom: 19px;
@@ -1385,13 +1429,22 @@ template {
     margin-bottom: 4px;
   }
   .hotel {
-    padding-bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 40.06px;
+  }
+  .hotel-right {
+    min-height: 402.94px;
   }
   .hotel__slider {
     margin-bottom: 20px;
   }
   .hotel-slider {
     height: 179px;
+  }
+  .hotel-slider__button {
+    width: 11.47px;
+    height: 11.93px;
+    background-size: 5px;
   }
   .hotel-info {
     padding-bottom: 32px;
@@ -1405,15 +1458,82 @@ template {
   }
   .newsletter {
     padding: 76px 0 83px 0;
+    min-height: 319px;
   }
-  .newsletter__title {
-    margin-bottom: 37px;
+  .newsletter-wrapper {
+    width: 88%;
+    padding-top: 8px;
+  }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .newsletter-title__strong {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
   }
   .subscribe {
     width: 100%;
   }
+  .subscribe__input {
+    padding-left: 20px;
+  }
   .card {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 42px;
+  }
+  .reviews-slider {
+    height: 520px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 36px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__text {
+    margin: 0;
+    text-align: left;
+  }
+  .reviews-slider__username {
+    margin-left: 0;
+  }
+  .reviews-slider__date {
+    margin-left: 0;
+  }
+  .reviews-slider__rating {
+    margin-left: 2px;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 40%;
+    margin-left: -65px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 41%;
+    margin-right: -65px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+  .activities__title {
+    padding-top: 13px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */

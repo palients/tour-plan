@@ -44,13 +44,14 @@
   .stars
     margin-bottom: 3px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
     &-right
       flex-direction: row
-      height: 200px
+      height: 210px
     &-slider
       width: 100%
   .booking
@@ -60,18 +61,37 @@
   .map
     width: 340px
   .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 579px
+      &__button
+        top: 43%
+        &--prev
+          left: 0
+        &--next
+          right: 0
   .activities
+    padding-top: 62px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    height: 230px
+    height: 255px
+    &__title
+      width: 200px
+  .newsletter
+    height: 260px
+    &-wrapper
+      margin-top: -6px
 @media (max-width: 767px)
+  .map
+    width: 100%
   .container
     max-width: 576px
     width: 92%
@@ -116,8 +136,6 @@
         margin-left: 0
       &-slider
         height: 350px
-  .map
-    width: 100%
   .newsletter
     &-wrapper
       max-width: 576px
@@ -147,6 +165,8 @@
     padding-top: 40px
     padding-bottom: 60px
 @media (max-width: 576px)
+  iframe
+    height: 172.94px
   .container
     max-width: 87%
   .logo
@@ -155,8 +175,6 @@
     &-top
       padding-top: 23px
       padding-bottom: 29px
-  .hotel
-    padding-top: 1px
   .breadcrumb
     &-list
       padding-top: 19px
@@ -165,11 +183,18 @@
     margin-right: 13px
     margin-bottom: 4px
   .hotel
-    padding-bottom: 0
+    padding-top: 1px
+    padding-bottom: 40.06px
+    &-right
+      min-height: 402.94px
     &__slider
       margin-bottom: 20px
     &-slider
       height: 179px
+      &__button
+        width: 11.47px
+        height: 11.93px
+        background-size: 5px
     &-info
       padding-bottom: 32px
       &__offer
@@ -179,9 +204,61 @@
     min-width: 279px
   .newsletter
     padding: 76px 0 83px 0
-    &__title
-      margin-bottom: 37px
+    min-height: 319px
+    &-wrapper
+      width: 88%
+      padding-top: 8px
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 40px
+      &__strong
+        font-weight: 500
+        font-size: 30px
+        line-height: 38px
   .subscribe
     width: 100%
+    &__input
+      padding-left: 20px
   .card
     width: 100%
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      width: 80%
+      text-align: center
+      margin: auto
+      margin-bottom: 42px
+    &-slider
+      height: 520px
+      &__item
+        padding: 0 30px 36px
+        &:after, &:before
+          display: none
+      &__text
+        margin: 0
+        text-align: left
+      &__username
+        margin-left: 0
+      &__date
+        margin-left: 0
+      &__rating
+        margin-left: 2px
+      &__button
+        top: 32px
+        &--prev
+          left: 40%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 41%
+          margin-right: -65px
+          transform: translate(50%, 0)
+  .activities
+    &__title
+      padding-top: 13px
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
