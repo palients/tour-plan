@@ -29,6 +29,11 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке menu");
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
 // Подключение яндекс карт API
 
 // ymaps.ready(init);
