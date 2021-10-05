@@ -1,4 +1,5 @@
-const hotelSwiper = new Swiper(".hotel-slider", {
+$(document).ready(function () {
+  const hotelSwiper = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
   speed: 500,
@@ -29,11 +30,40 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  console.log("Клик по кнопке menu");
-  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+var menuButton = $(".menu-button");
+menuButton.on("click", function () {
+  $(".navbar-bottom").toggleClass("navbar-bottom--visible");
 });
+
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+var ESCcloseButton = $(".modal__close");
+
+modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal);
+ESCcloseButton.on("keydown", ESCclose);
+
+  function openModal () {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  }
+  function closeModal (event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+    function ESCclose (event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    if (event.key == "Escape") modalOverlay.removeClass("modal__overlay--visible");
+    if (event.key == "Escape") modalDialog.removeClass("modal__dialog--visible");
+    }
+});
+
 // Подключение яндекс карт API
 
 // ymaps.ready(init);
