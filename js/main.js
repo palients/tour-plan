@@ -86,6 +86,8 @@ ESCcloseButton.on("keydown", ESCclose);
   }
     });
     })
+    AOS.init();
+    
 });
 
 // Подключение яндекс карт API
