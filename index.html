@@ -330,7 +330,7 @@
       <div class="footer-wrapper">
         <img src="img/vertical-logo.svg" alt="Logo: Best Your Plan" class="logo footer__logo">
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">All categories</h3>
+          <h3 class="footer__title footer__title--categories">All categories</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -358,9 +358,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/footer-icons/facebook.svg" alt="Icon: Facebook"></a>
-            <a href="#" class="footer__link"><img src="img/footer-icons/youtube.svg" alt="Icon: Instagram"></a>
-            <a href="#" class="footer__link"><img src="img/footer-icons/instagram.svg" alt="Icon: Youtube"></a>
+            <a href="https://www.facebook.com/" class="footer__link"><img src="img/footer-icons/facebook.svg" alt="Icon: Facebook"></a>
+            <a href="https://www.youtube.com/" class="footer__link--youtube"><img src="img/footer-icons/youtube.svg" alt="Icon: Youtube"></a>
+            <a href="https://www.instagram.com/" class="footer__link"><img src="img/footer-icons/instagram.svg" alt="Icon: Instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -381,24 +381,24 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/map-marker.svg" alt="Icon: Map">
+                <img class="footer__icon--marker" src="img/footer-icons/map-marker.svg" alt="Icon: Map">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--mb-3 footer__item--phones">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/phone-call.svg" alt="Icon: Phone Call">
+                <img class="footer__icon--phone" src="img/footer-icons/phone-call.svg" alt="Icon: Phone Call">
               </div>
-              Tel (business hours) : 269 1500<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-
+              <div class="footer__information">
+              Tel (business hours) :  <a href="tel:2691500">2691500</a><br>
+              Tel (hotline) Monday - Saturday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+              Tel (hotline) Sunday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/mail.svg" alt="Icon: Mail">
+                <img class="footer__icon--mail" src="img/footer-icons/mail.svg" alt="Icon: Mail">
               </div>
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -420,6 +420,20 @@
         <!-- /.footer__contact-form -->
       </div>
       <!-- /.footer-wrapper -->
+      <div class="footer__links">
+        <div class="footer__links-documents">
+        <li class="footer__documents">
+          <a href="#">Disclaimer</a>
+        </li>
+        <li class="footer__documents">
+          <a href="#">Conditions of use</a>
+        </li>
+        <li class="footer__documents">
+          <a href="#">Cancellation policy</a>
+        </li>
+        </div>
+        <img class="footer__payment-methods" src="img/payment-methods.png" alt="tour plan: payment methods">
+      </div>
     </div>
     <!-- /.container -->
   </footer>
