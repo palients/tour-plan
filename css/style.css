@@ -1435,13 +1435,9 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1449,6 +1445,7 @@ iframe {
 }
 
 .footer__links-documents {
+  list-style-type: none;
   min-width: 283px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,6 +1453,8 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__payment-methods {
@@ -1580,7 +1579,11 @@ iframe {
     max-width: 700px;
   }
   .logo {
+    margin-top: 0;
     width: 132px;
+  }
+  .swiper {
+    margin: 0;
   }
   .navbar-top {
     padding-top: 30px;
@@ -1590,10 +1593,7 @@ iframe {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-right: 13px;
-    padding-left: 13px;
-    padding-top: 20px;
-    padding-bottom: 22px;
+    padding: 19px 15px 23px 15px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -1612,7 +1612,7 @@ iframe {
     margin-bottom: 7px;
   }
   .stars {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   .hotel {
     padding-bottom: 60px;
@@ -1691,14 +1691,22 @@ iframe {
   .footer-wrapper {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
-    grid-gap: 50px 20px;
+    grid-gap: 47px 20px;
+    padding-bottom: 63px;
+  }
+  .footer__item--phones {
+    margin-bottom: 21px;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 47.3%;
         flex-basis: 47.3%;
   }
   .footer__title--mb-contact {
+    margin-top: 18px;
     margin-bottom: 24px;
+  }
+  .footer__title--mb-message {
+    margin-top: 10px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1749,6 +1757,17 @@ iframe {
     margin-top: 2px;
     margin-left: 8px;
     min-width: 35px;
+  }
+  .footer__icon--marker {
+    margin-top: 2px;
+  }
+  .footer__icon--mail {
+    margin-top: 4px;
+  }
+  .footer__links {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -1943,6 +1962,9 @@ iframe {
     padding-top: 23px;
     padding-bottom: 29px;
   }
+  .navbar--fixed {
+    width: 100%;
+  }
   .breadcrumb-list {
     padding-top: 19px;
     padding-bottom: 19px;
@@ -1973,9 +1995,10 @@ iframe {
     width: 100%;
   }
   .hotel-info {
-    padding-bottom: 32px;
+    padding-bottom: 31px;
   }
   .hotel-info__offer {
+    margin-top: 1px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -2083,11 +2106,20 @@ iframe {
             order: -4;
     margin-bottom: 29px;
   }
+  .search {
+    margin-right: 0;
+  }
   .footer {
     padding-top: 68px;
   }
   .footer__text {
     margin-bottom: 19px;
+  }
+  .footer__item--mb-2 {
+    margin-bottom: 24px;
+  }
+  .footer__item--mb-2__last {
+    margin-bottom: 20px;
   }
   .footer__title--inline {
     margin-right: 0;
@@ -2098,8 +2130,22 @@ iframe {
     margin-left: -2px;
     margin-bottom: 15px;
   }
+  .footer__title--categories {
+    margin-top: 3px;
+  }
+  .footer__title--mb-contact {
+    margin-top: 10px;
+    margin-left: 0;
+  }
   .footer__link {
     margin-right: 12px;
+  }
+  .footer__link--youtube {
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  .footer__link--facebook {
+    margin-left: 2px;
   }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
@@ -2155,6 +2201,14 @@ iframe {
     margin-left: 5px;
     margin-top: 5px;
     min-width: 27px;
+  }
+  .footer__icon--phone {
+    margin-top: 0;
+  }
+  .footer__icon--mail {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-left: 1px;
   }
   .footer__contact-details {
     margin-left: -2px;
