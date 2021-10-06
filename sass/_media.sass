@@ -371,7 +371,7 @@
           margin-right: -65px
           transform: translate(50%, 0)
   .activities
-    padding-bottom: 40px
+    padding-bottom: 39px
     &-wrapper
       width: 100%
     &__title
@@ -390,9 +390,12 @@
   .search
     margin-right: 0
   .footer
-    padding-top: 68px
+    padding-top: 66px
+    padding-bottom: 20px
     &__text
       margin-bottom: 19px
+    &__info
+      flex-basis: 100%
     &__item
       &--mb-2
         margin-bottom: 24px
@@ -405,7 +408,7 @@
       &--mb-message
         margin-top: -5px
         margin-left: -2px
-        margin-bottom: 15px
+        margin-bottom: 16px
       &--categories
         margin-top: 3px
       &--mb-contact
@@ -421,6 +424,7 @@
     &-wrapper
       grid-template-columns: 1fr
       grid-gap: 41px
+      padding-bottom: 30px
     &__logo
       margin-left: -2px
       height: 110px
@@ -470,3 +474,27 @@
         margin: 0
         grid-row: 7
         grid-column: 1
+    &__input-group
+      &--first
+        order: -8
+      &--second
+        order: -7
+    &__message
+      order: -6
+      margin-bottom: 16px
+    &__info
+      order: -5
+      margin-bottom: 14px
+    &__documents
+      margin-right: 8px
+      &--second
+        margin-right: 9px
+      &--third
+        margin-right: 0
+    &__links
+      flex-wrap: wrap
+      &-documents
+        justify-content: start
+        margin-bottom: 10px
+    &__payment-methods
+      position: static
