@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,17 +20,19 @@
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-left"
+          data-aos-delay="500">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="200"
+          data-aos-duration="900">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -112,14 +115,12 @@
           <div class="hotel-wrapper">
             <h1 class="hotel-name hotel-info__name">Thank You!</h1>
           </div>
-          <p class="hotel-description hotel-info__description">Наш менеджер позвонит вам через 5 минут.</p>
+          <p class="hotel-description hotel-info__description hotel-info__description--message">Our manager will call you in 5 minutes.</p>
+          <a href="index.html">
+            <button class="button hotel-button">Back to home page</button>
+          </a>
         </div>
-        <!-- /.hotel-info__textt -->
-        <div class="rating hotel-info__rating">
-          <span class="rating__text">User Rattings</span>
-          <span class="rating__counter">4.5/5</span>
-        </div>
-        <!-- /.hotel-info__rating -->
+        <!-- /.hotel-info__text -->
       </div>
       <!-- /.hotel-info -->
     </div>
@@ -128,9 +129,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Your Plan" class="logo footer__logo">
+        <a href="index.html" class="footer__logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Your Plan" class="logo footer__logo-image">
+        </a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">All categories</h3>
+          <h3 class="footer__title footer__title--categories">All categories</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -158,9 +161,12 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/footer-icons/facebook.svg" alt="Icon: Facebook"></a>
-            <a href="#" class="footer__link"><img src="img/footer-icons/youtube.svg" alt="Icon: Instagram"></a>
-            <a href="#" class="footer__link"><img src="img/footer-icons/instagram.svg" alt="Icon: Youtube"></a>
+            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook"><img
+                src="img/footer-icons/facebook.svg" alt="Icon: Facebook"></a>
+            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube"><img
+                src="img/footer-icons/youtube.svg" alt="Icon: Youtube"></a>
+            <a href="https://www.instagram.com/" class="footer__link"><img src="img/footer-icons/instagram.svg"
+                alt="Icon: Instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -181,34 +187,39 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/map-marker.svg" alt="Icon: Map">
+                <img class="footer__icon footer__icon--marker" src="img/footer-icons/map-marker.svg" alt="Icon: Map">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--mb-3 footer__item--phones">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/phone-call.svg" alt="Icon: Phone Call">
+                <img class="footer__icon footer__icon--phone" src="img/footer-icons/phone-call.svg"
+                  alt="Icon: Phone Call">
               </div>
-              Tel (business hours) : 269 1500<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-
+              <div class="footer__information">
+                Tel (business hours) : <a href="tel:2691500">269 1500</a><br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
             </li>
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--mb-2 footer__item--mb-2__last">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-icons/mail.svg" alt="Icon: Mail">
+                <img class="footer__icon footer__icon--mail" src="img/footer-icons/mail.svg" alt="Icon: Mail">
               </div>
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-message">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group footer__input-group--first">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group footer__input-group--second">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+            </div>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -216,12 +227,69 @@
         <!-- /.footer__contact-form -->
       </div>
       <!-- /.footer-wrapper -->
+      <div class="footer__links">
+        <ul class="footer__links-documents">
+          <li class="footer__documents footer__documents--first">
+            <a href="#">Disclaimer</a>
+          </li>
+          <li class="footer__documents footer__documents--second">
+            <a href="#">Conditions of use</a>
+          </li>
+          <li class="footer__documents footer__documents--third">
+            <a href="#">Cancellation policy</a>
+          </li>
+        </ul>
+        <img class="footer__payment-methods" src="img/payment-methods.png" alt="tour plan: payment methods">
+      </div>
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-message">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal" id="rating-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=c2a15098-ac82-4a27-8a41-91800810eed7&lang=en_US"></script> -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

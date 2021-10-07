@@ -44,7 +44,7 @@ var ESCcloseButton = $(".modal__close");
 
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
-ESCcloseButton.on("keydown", ESCclose);
+ESCcloseButton.on("keydown", closeModalEsc);
 
   function openModal () {
     var targetModal = $(this).attr("data-href");
@@ -58,15 +58,15 @@ ESCcloseButton.on("keydown", ESCclose);
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-  // Подключение Esc для закрытия модальных окон
-    function ESCclose (event) {
-    event.preventDefault();
+  function closeModalEsc (event) {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    if (event.key == "Escape") modalOverlay.removeClass("modal__overlay--visible");
-    if (event.key == "Escape") modalDialog.removeClass("modal__dialog--visible");
+    if(event.which === 27) {
+      event.preventDefault();
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
     }
-    
+  }
     // Обработка форм
     $(".form").each(function() {
       $(this).validate({
@@ -87,7 +87,6 @@ ESCcloseButton.on("keydown", ESCclose);
     });
     })
     AOS.init();
-    
 });
 
 // Подключение яндекс карт API

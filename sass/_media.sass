@@ -31,6 +31,9 @@
       padding-bottom: 30px
     &__search
       margin-left: auto
+      &--mobile
+        &--visible
+          width: 100%
     &-menu
       padding: 19px 15px 23px 15px
       &__link
@@ -95,7 +98,7 @@
     &-wrapper
       margin-top: -6px
   .footer
-    padding-top: 72px
+    padding-top: 69px
     &-wrapper
       grid-template-columns: repeat(7, 1fr)
       grid-gap: 47px 20px
@@ -108,8 +111,8 @@
         flex-basis: 47.3%
     &__title
       &--mb-contact
-        margin-top: 18px
-        margin-bottom: 24px
+        margin-top: 17px
+        margin-bottom: 23px
       &--mb-message
         margin-top: 10px
     &__logo
@@ -271,6 +274,7 @@
     padding-top: 40px
     padding-bottom: 60px
   .footer
+
     &__input
       &-group
         flex-basis: 100%
@@ -278,7 +282,7 @@
   iframe
     height: 172.94px
   .container
-    max-width: 88%
+    max-width: 87.5%
   .logo
     width: 99px
   .navbar
@@ -289,8 +293,8 @@
       width: 100%
   .breadcrumb
     &-list
-      padding-top: 19px
-      padding-bottom: 19px
+      padding-top: 18px
+      padding-bottom: 20px
   .stars
     margin-right: 13px
     margin-bottom: 4px
@@ -313,29 +317,46 @@
       padding-bottom: 31px
       &__offer
         margin-top: 1px
-        padding-left: 10px
+        margin-left: 1px
+        padding-left: 9px
         padding-right: 10px
   .booking
-    min-width: 279px
+    margin-left: 1px
+    min-width: 278px
+    padding-left: 22px
+    &__info
+      margin-bottom: 10px
+    &__call-center
+      margin-bottom: 17px
+    &__num
+      margin-left: 8px
+      margin-right: 3px
   .newsletter
     padding: 76px 0 83px 0
     min-height: 319px
     &-wrapper
       width: 88%
-      padding-top: 8px
+      padding-top: 6px
     &-title
       font-weight: 300
       font-size: 20px
       line-height: 25px
-      margin-bottom: 40px
+      margin-bottom: 37px
       &__strong
         font-weight: 500
         font-size: 30px
         line-height: 38px
+        margin-top: 5px
+        margin-left: 1px
   .subscribe
     width: 100%
+    border-radius: 6px
     &__input
+      width: 99%
       padding-left: 20px
+      margin-left: 1px
+    &__button
+      right: 1px
   .card
     width: 100%
   .reviews
@@ -372,7 +393,7 @@
           margin-right: -65px
           transform: translate(50%, 0)
   .activities
-    padding-bottom: 39px
+    padding-bottom: 40px
     &-wrapper
       width: 100%
     &__title
@@ -387,14 +408,16 @@
         order: -3
       &__third
         order: -4
-        margin-bottom: 29px
+        margin-bottom: 28px
   .search
     margin-right: 0
   .footer
     padding-top: 66px
     padding-bottom: 20px
     &__text
+      width: 98%
       margin-bottom: 19px
+      margin-left: 0
     &__info
       flex-basis: 100%
     &__item
@@ -405,32 +428,36 @@
     &__title
       &--inline
         margin-right: 0
-        margin-bottom: 20px
+        margin-top: -2px
+        margin-bottom: 21px
       &--mb-message
         margin-top: -5px
-        margin-left: -2px
-        margin-bottom: 16px
+        margin-left: -1px
+        margin-bottom: 15px
       &--categories
         margin-top: 3px
       &--mb-contact
-        margin-top: 10px
-        margin-left: 0
+        margin-top: 10.7px
+        margin-left: 0.6px
+        margin-bottom: 24px
     &__link
-      margin-right: 12px
       &--youtube
         margin-left: 2px
         margin-right: 10px
       &--facebook
-        margin-left: 2px
+        margin-left: 2.3px
+        margin-right: 10.8px
     &-wrapper
       grid-template-columns: 1fr
-      grid-gap: 41px
+      grid-gap: 41px 0px
       padding-bottom: 30px
     &__logo
-      margin-left: -2px
-      height: 110px
-      grid-row: 1
-      grid-column: 1
+      margin: 0
+      &--image
+        margin-left: 1px
+        height: 109px
+        grid-row: 1
+        grid-column: 1
     &__social
       &-network
         display: inline-block
@@ -456,15 +483,18 @@
       grid-column: 1
     &__icon
       &-wrapper
-        margin-left: 5px
-        margin-top: 5px
+        margin-left: 6px
+        margin-top: 4px
         min-width: 27px
+      &--marker
+        margin-top: 2px
+        margin-left: 1px
       &--phone
         margin-top: 0
       &--mail
-        margin-top: 0
+        margin-top: -3px
         margin-bottom: 1px
-        margin-left: 1px
+        margin-left: -1px
     &__contact
       &-details
         margin-left: -2px
@@ -473,6 +503,7 @@
         grid-column: 1
       &-form
         margin: 0
+        margin-left: -1px
         grid-row: 7
         grid-column: 1
     &__input-group
@@ -482,14 +513,16 @@
         order: -7
     &__message
       order: -6
-      margin-bottom: 16px
+      margin-bottom: 15px
     &__info
       order: -5
-      margin-bottom: 14px
+      margin-bottom: 15px
     &__documents
       margin-right: 8px
-      &--second
+      &--first
         margin-right: 9px
+      &--second
+        margin-right: 10px
       &--third
         margin-right: 0
     &__links
@@ -499,3 +532,4 @@
         margin-bottom: 10px
     &__payment-methods
       position: static
+    
