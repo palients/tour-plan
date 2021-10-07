@@ -40,11 +40,9 @@ menuButton.on("click", function () {
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
-var ESCcloseButton = $(".modal__close");
 
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
-ESCcloseButton.on("keydown", closeModalEsc);
 
   function openModal () {
     var targetModal = $(this).attr("data-href");
@@ -57,15 +55,6 @@ ESCcloseButton.on("keydown", closeModalEsc);
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-  }
-  function closeModalEsc (event) {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    if(event.which === 27) {
-      event.preventDefault();
-      modalOverlay.removeClass("modal__overlay--visible");
-      modalDialog.removeClass("modal__dialog--visible");
-    }
   }
     // Обработка форм
     $(".form").each(function() {
@@ -88,15 +77,11 @@ ESCcloseButton.on("keydown", closeModalEsc);
     })
     AOS.init();
 });
-
-// Подключение яндекс карт API
-
-// ymaps.ready(init);
-// function init(){
-//   var myMap = new ymaps.Map("map", {
-//     center: [7.57, 79.80],
-//     zoom: 11,
-//     controls: ["zoomControl"],
-//     behaviors: ["drag"]
-//   });
-// }
+  $(document).on("keydown", function(e){
+    if(e.which === 27){
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  });

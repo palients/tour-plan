@@ -156,6 +156,11 @@
         margin-top: 4px
     &__links
       justify-content: start
+  .modal
+    &__dialog
+      min-width: 450px
+      transform: translate(-50%, -50%)
+      padding: 37px 70px
 @media (max-width: 767px)
   .map
     width: 100%
@@ -274,10 +279,14 @@
     padding-top: 40px
     padding-bottom: 60px
   .footer
-
     &__input
       &-group
         flex-basis: 100%
+  .modal
+    &__dialog
+      min-width: 425px
+      transform: translate(-50%, -50%)
+      padding: 34px 70px
 @media (max-width: 576px)
   iframe
     height: 172.94px
@@ -532,4 +541,21 @@
         margin-bottom: 10px
     &__payment-methods
       position: static
-    
+  .modal
+    &__input, &__message
+      font-size: 12px
+      height: 40px
+      margin-bottom: 12px
+    &__message
+      min-height: 100px
+    &__button
+      order: 1
+    &__info
+      margin-bottom: 15px
+    &__down
+      flex-direction: column
+      align-items: start
+    &__dialog
+      min-width: 80%
+      transform: translate(-50%, -50%)
+      padding: 30px 50px

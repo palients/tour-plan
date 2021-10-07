@@ -1479,8 +1479,8 @@ iframe {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .modal__overlay--visible {
@@ -1488,22 +1488,36 @@ iframe {
   opacity: 1;
 }
 
+.modal__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .modal__dialog {
   max-width: 478px;
   position: fixed;
   top: 50%;
   left: 50%;
-  padding: 33px 87.37px 33px 88px;
+  padding: 33px 87.68px 33px 88.32px;
   border-radius: 8px;
   color: #fff;
   background-color: #0a223d;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-49.6%, -55.1%);
+          transform: translate(-49.6%, -55.1%);
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .modal__dialog--visible {
@@ -1529,19 +1543,21 @@ iframe {
   text-align: center;
 }
 
+.modal__title--mb-message {
+  margin: 0;
+  margin-top: 1px;
+  margin-bottom: 11px;
+}
+
 .modal__input {
   width: 100%;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
-}
-
-.modal__button {
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal__info {
@@ -1550,6 +1566,7 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: #e0e0e0;
+  right: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1776,6 +1793,12 @@ iframe {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .modal__dialog {
+    min-width: 450px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 37px 70px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1953,6 +1976,12 @@ iframe {
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    min-width: 425px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 34px 70px;
   }
 }
 
@@ -2316,6 +2345,37 @@ iframe {
   }
   .footer__payment-methods {
     position: static;
+  }
+  .modal__input, .modal__message {
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .modal__message {
+    min-height: 100px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal__info {
+    margin-bottom: 15px;
+  }
+  .modal__down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .modal__dialog {
+    min-width: 80%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 30px 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
