@@ -17,18 +17,24 @@
       &-group
         flex-basis: 100%
 @media (max-width: 992px)
-  input:focus
-    background-color: transparent
-  textarea:focus
-    background-color: transparent
   button:hover
-    background-color: transparent
+    background-color: $primary
   button:active
-    background-color: transparent
+    background-color: $primary
+  input:focus
+    background-color: $light
+  textarea:focus
+    background-color: $light
   a:hover
-    color: none
+    color: inherit
   a:active
-    color: none
+    color: inherit
+  .navbar
+    &-top
+      &__menu-button:active
+        background-color: $light
+      &__menu-button:hover
+        background-color: $light
   .container,
   .newsletter-wrapper
     max-width: 700px
