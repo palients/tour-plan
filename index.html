@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    header,
+    nav,
+    section,
+    footer {
+      display: block;
+    }
+  </style>
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -313,7 +321,8 @@
         </div>
         <!-- /.card -->
         <div class="card activities__card activities__card__third" data-aos="fade-up" data-aos-delay="600">
-          <img src="img/activities/activities-card3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <img src="img/activities/activities-card3.jpg" alt="Tamarind falls hiking trip - full day"
+            class="card__image">
           <h3 class="card__title">Tamarind falls hiking <br>trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
@@ -419,7 +428,8 @@
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
             </div>
             <div class="footer__input-group footer__input-group--second">
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required
+                data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
@@ -457,7 +467,8 @@
       <h3 class="modal__title modal__title--mb-message">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__down">
@@ -479,7 +490,8 @@
       <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -490,9 +502,9 @@
   <!-- /.modal -->
   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=c2a15098-ac82-4a27-8a41-91800810eed7&lang=en_US"></script> -->
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
