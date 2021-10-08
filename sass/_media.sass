@@ -17,6 +17,18 @@
       &-group
         flex-basis: 100%
 @media (max-width: 992px)
+  input:focus
+    background-color: none
+  textarea:focus
+    background-color: none
+  button:hover
+    background-color: none
+  button:active
+    background-color: none
+  a:hover
+    color: none
+  a:active
+    color: none
   .container,
   .newsletter-wrapper
     max-width: 700px
@@ -469,6 +481,8 @@
         margin-left: 0.6px
         margin-bottom: 24px
     &__link
+      &--phone
+        display: inline-block
       &--youtube
         margin-left: 2px
         margin-right: 10px
@@ -564,7 +578,6 @@
     &__input, &__message
       font-size: 12px
       height: 40px
-      margin-bottom: 12px
     &__message
       min-height: 100px
     &__button
@@ -577,4 +590,4 @@
     &__dialog
       min-width: 80%
       transform: translate(-50%, -50%)
-      padding: 30px 50px
+      padding: 20px 35px
