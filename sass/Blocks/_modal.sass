@@ -13,11 +13,6 @@
     &--visible
       visibility: visible
       opacity: 1
-  &__down
-    display: flex
-    justify-content: space-between
-    align-items: center
-    align-content: center
   &__dialog
     max-width: 478px
     position: fixed
@@ -55,11 +50,13 @@
       margin-bottom: 11px
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
+    &--name
+      margin-top: 0
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
   &__info
     font-style: normal
     font-weight: bold
@@ -67,3 +64,9 @@
     line-height: 15px
     color: #e0e0e0
     right: 0
+  &__down
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    align-content: center

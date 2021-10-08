@@ -6,13 +6,27 @@ body
   background-color: $secondary
 input
   outline: none
+input:focus
+  background-color: $light-input
+textarea:focus
+  background-color: $light-input
 img
   max-width: 100%
 button
   cursor: pointer
+  color: $light
+  background-color: $primary
+button:hover
+  background-color: $primary-hover
+button:active
+  background-color: $primary-active
 a
   text-decoration: none
   color: inherit
+a:hover
+  color: $primary
+a:active
+  color: $primary-active
 .container
   max-width: 1110px
   margin: auto
@@ -45,3 +59,8 @@ a
 .invalid
   color: $primary
   border-bottom: 1px solid $primary
+  &__email
+    position: absolute
+    color: $primary
+    border-bottom: 1px solid $primary
+    bottom: 0
