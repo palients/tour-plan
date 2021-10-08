@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  // Подключение маски для телефона
-  $(".phone").mask("0000-0000");
   
   const hotelSwiper = new Swiper(".hotel-slider", {
   // Optional parameters
