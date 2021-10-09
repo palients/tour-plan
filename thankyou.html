@@ -162,12 +162,12 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook"><img
+            <a href="https://www.facebook.com/" class="footer__link footer__link--facebook" target="_blank"><img
                 src="img/footer-icons/facebook.svg" alt="Icon: Facebook"></a>
-            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube"><img
+            <a href="https://www.youtube.com/" class="footer__link footer__link--youtube" target="_blank"><img
                 src="img/footer-icons/youtube.svg" alt="Icon: Youtube"></a>
-            <a href="https://www.instagram.com/" class="footer__link"><img src="img/footer-icons/instagram.svg"
-                alt="Icon: Instagram"></a>
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img
+                src="img/footer-icons/instagram.svg" alt="Icon: Instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -199,7 +199,8 @@
               </div>
               <div class="footer__information">
                 Tel (business hours) : <a href="tel:2691500">269 1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Monday - Saturday: <a class="footer__link--phone" href="tel:52566138">52-56-61-38</a> (08:00
+                am – 20:00 pm)<br>
                 Tel (hotline) Sunday: <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
             </li>
             <li class="footer__item footer__item--mb-2 footer__item--mb-2__last">
@@ -215,10 +216,12 @@
           <h3 class="footer__title footer__title--mb-message">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group footer__input-group--first">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              <input type="text" minlength="2" maxlength="15" class="input footer__input" placeholder="Your Full Name*"
+                name="name" required>
             </div>
             <div class="footer__input-group footer__input-group--second">
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" minlength="18" class="input footer__input" placeholder="Phone Number*" name="phone"
+                required data-mask="+7 (000) 000-00-00" data-mask-selectonfocus="true">
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
