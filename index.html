@@ -223,7 +223,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe formed">
-        <input type="text" minlength="2" class="subscribe__input" placeholder="Your email address" name="email" required>
+        <input type="mail" minlength="2" class="subscribe__input" placeholder="Your email address" name="email" required>
         <button class="subscribe__button" type="submit">Send</button>
       </form>
     </div>
@@ -426,11 +426,11 @@
           <h3 class="footer__title footer__title--mb-message">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group footer__input-group--first">
-              <input type="text" minlength="2" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              <input type="text" minlength="2" maxlength="15" class="input footer__input" placeholder="Your Full Name*" name="name" required>
             </div>
             <div class="footer__input-group footer__input-group--second">
-              <input type="tel" minlength="2" class="input footer__input" placeholder="Phone Number*" name="phone" required
-                data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
+              <input type="tel" minlength="11" class="input footer__input" placeholder="Phone Number*" name="phone" required
+                data-mask="+7 (000) 000-00-00" data-mask-selectonfocus="true">
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
@@ -467,11 +467,11 @@
       </a>
       <h3 class="modal__title modal__title--mb-message">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" minlength="2" class="input modal__input modal__input--name" placeholder="Your Full Name*" name="name"
+        <input type="text" minlength="2" maxlength="15" class="input modal__input modal__input--name" placeholder="Your Full Name*" name="name"
           required minlength="2">
-        <input type="tel" minlength="2" class="input modal__input" placeholder="Phone Number*" name="phone" required
-          data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
-        <input type="email" minlength="2" class="input modal__input" placeholder="Email*" name="email" required>
+        <input type="tel" minlength="11" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          data-mask="+7 (000) 000-00-00" data-mask-selectonfocus="true">
+        <input type="mail" minlength="2" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__down">
           <button class="button modal__button" type="submit">Send</button>
@@ -491,9 +491,9 @@
       </a>
       <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" minlength="2" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-        <input type="tel" minlength="2" class="input modal__input" placeholder="Phone Number*" name="phone" required
-          data-mask="+7(000) 000-00-00" data-mask-selectonfocus="true">
+        <input type="text" minlength="2" maxlength="15" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+        <input type="tel" minlength="11" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          data-mask="+7 (000) 000-00-00" data-mask-selectonfocus="true">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__down">
           <button class="button modal__button" type="submit">Send</button>
