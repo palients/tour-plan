@@ -216,7 +216,7 @@
           <h3 class="footer__title footer__title--mb-message">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group footer__input-group--first">
-              <input type="text" minlength="2" maxlength="15" class="input footer__input" placeholder="Your Full Name*"
+              <input type="text" minlength="3" maxlength="15" class="input footer__input" placeholder="Your Full Name*"
                 name="name" required>
             </div>
             <div class="footer__input-group footer__input-group--second">
@@ -249,46 +249,6 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <div class="modal" id="booking-modal">
-    <div class="modal__overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-      <a href="" class="modal__close">
-        <img src="img/close.svg" alt="Icon: close">
-      </a>
-      <h3 class="modal__title modal__title--mb-message">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
-        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit">Send</button>
-        <span class="modal__info">* Required Fields</span>
-      </form>
-    </div>
-    <!-- /.modal__dialog -->
-  </div>
-  <!-- /.modal -->
-  <div class="modal" id="rating-modal">
-    <div class="modal__overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-      <a href="" class="modal__close">
-        <img src="img/close.svg" alt="Icon: close">
-      </a>
-      <h3 class="modal__title modal__title--mb-message">Send us a feedback</h3>
-      <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
-        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit">Send</button>
-        <span class="modal__info">* Required Fields</span>
-      </form>
-    </div>
-    <!-- /.modal__dialog -->
-  </div>
-  <!-- /.modal -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=c2a15098-ac82-4a27-8a41-91800810eed7&lang=en_US"></script> -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
