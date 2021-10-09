@@ -38,7 +38,7 @@ menuButton.on("click", function () {
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
-var closeModalBackground = $(".modal__overlay--visible");
+var closeModalBackground = $(".modal__overlay");
 
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
