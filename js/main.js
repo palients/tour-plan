@@ -67,7 +67,7 @@ closeModalBackground.on("click", closeModal);
     },
     email: {
       required: "Please enter email",
-      email: "Your email address must be in the format of name@domain.com",
+      email: "format: name@domain.com",
     },
     phone: {
       required: "Phone is required"
@@ -82,7 +82,7 @@ closeModalBackground.on("click", closeModal);
       messages: {
     email: {
       required: "Please enter email",
-      email: "Your email address must be in the format of name@domain.com",
+      email: "format: name@domain.com",
     }
   }
     });
